@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    margin-top: 5vh;
 }
 
 .card_form{
@@ -56,10 +57,10 @@
     height: 40px;
     margin: 30px 0;
     position: relative;
-    border-color: rgb(13, 51, 2);
+    border-color: rgba(2, 150, 100, 1);
     border-radius: 10px;
     padding-inline: 15px;
-    background: rgb(255, 255, 255);
+    background: rgba(168, 161, 161, 0.418);
     margin-top: 10px;
     margin-bottom: 10px;
     
@@ -105,22 +106,17 @@
 .option a:hover{
     text-decoration: underline;
 }
-
-.lgnBtn button{
-    width: 300px;
-    height: 45px;
-    background-color: rgb(23, 90, 5);
-    color: white;
-    border-radius: 10px;
-    border: none;
+.lgnBtn {
+    display: flex;
+    justify-content: space-between;
 }
-
-.lgnBtn button:hover{
-    width: 300px;
-    height: 45px;
-    background-color: rgb(45, 173, 10);
-    color: white;
+.lgnBtn button{
+    width: 150px;
+    height: 40px;
     border-radius: 10px;
-    border: none;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 30px;
 }

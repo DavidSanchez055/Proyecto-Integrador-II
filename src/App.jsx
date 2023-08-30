@@ -1,6 +1,7 @@
 import './App.css'
 import  {Routes, Route} from 'react-router-dom';
 import Login from './Pages/login';
+import { Dashboard } from './Pages/Dashboard';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Login />}/>
       <Route path='/Login' element={<Login />}/>
+      <Route path='/Dashboard' element={<Dashboard />}/>
     </Routes>
   )
 }
