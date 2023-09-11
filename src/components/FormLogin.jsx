@@ -3,13 +3,13 @@ import Logo from '../assets/logo.png'
 import loro from '../assets/macau-loro.jpg'
 import '../styles/Login.css'
 import { LoginButton }   from '../components/loginButton.jsx'
-import { SignInButton } from './SignInButton'
+import { SignInButton2 } from './SignInButton2'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 export const FormLogin = () => {
-
+  
   const[usuario, setUsuario] = useState('');
   const[password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -38,6 +38,10 @@ export const FormLogin = () => {
     })
   }
 
+  const SignInNavigate = () => {
+    navigate('/SignUp');
+  }
+
   
   
 
@@ -47,7 +51,7 @@ export const FormLogin = () => {
         <img src={Logo}/>
         <h4>Login</h4>
         <div className="input_user">
-          <label className="labels">User</label>
+          <label className="labels">Username</label>
           <input className="inputs" type="text" placeholder="Username" 
           onChange={(e) => {setUsuario(e.target.value)}}
           />
@@ -68,7 +72,7 @@ export const FormLogin = () => {
         <form>
           <div className="lgnBtn">
             <LoginButton fnInicioSesion={InicioSesion}/>
-            <SignInButton />
+            <SignInButton2 fnSignInNavigate={SignInNavigate}/>
           </div>
         </form>
 
