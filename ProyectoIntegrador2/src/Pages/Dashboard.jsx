@@ -16,8 +16,6 @@ export const Dashboard = () => {
       <div className='menu flex'>
         
         <div className='w-screen-h-screen'>
-
-
           <Carrusel />
           <div className='flex_cards'>
             <Cards1 />
