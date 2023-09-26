@@ -1,5 +1,5 @@
 import React from 'react'
-import loro from '../assets/macau-loro.jpg'
+import Tucan from '../assets/toucan.jpg'
 import '../styles/signup.css'
 import { SignInButton } from './SignInButton'
 import { useState } from 'react'
@@ -101,7 +101,7 @@ export const SignUpForm = () => {
   
         </div>
         <div className="photo">
-          <img src={loro} />
+          <img src={Tucan} />
         </div>
       </div>
     )
