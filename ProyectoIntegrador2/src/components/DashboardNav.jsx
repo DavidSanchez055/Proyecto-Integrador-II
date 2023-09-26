@@ -13,8 +13,6 @@ export const DashboardNav = () => {
             <a href="#">Departments</a>
             <a href="#">Regions</a>
             <a href="#">Profile</a>
-           <button class="btnLgn-popup">Login</button>
-           
         </nav>
     </header>
     </>

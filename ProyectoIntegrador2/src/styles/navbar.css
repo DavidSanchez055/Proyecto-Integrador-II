@@ -4,7 +4,7 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-image: linear-gradient(120deg,#8fd3f4 100%, #84fab0 0%);
+    background: linear-gradient(to right, rgba(242, 252, 253, 1), rgba(202, 255, 252, 1));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-    color: white;
+    color: black;
 }
 .navigation a::after{
     content: '';
