@@ -7,7 +7,7 @@ export const DashboardNav = () => {
     <>
     <header>
         <img className="logo" src={Logo}/>
-        <nav class="navigation">
+        <nav className="navigation">
             <a href="#">Home</a>
             <a href="#">Products</a>
             <a href="#">Departments</a>
@@ -16,5 +16,5 @@ export const DashboardNav = () => {
         </nav>
     </header>
     </>
-  )
+  ) 
 }

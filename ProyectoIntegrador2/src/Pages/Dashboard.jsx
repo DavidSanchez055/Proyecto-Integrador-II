@@ -13,7 +13,7 @@ export const Dashboard = () => {
   return (
     <>
       <DashboardNav />
-      <div className='flex'>
+      <div className='menu flex'>
         
         <div className='w-screen-h-screen'>
 
