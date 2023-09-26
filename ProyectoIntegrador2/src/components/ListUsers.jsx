@@ -7,8 +7,10 @@ import Button from "react-bootstrap/esm/Button";
 import { MdDelete } from 'react-icons/md'
 import { FaUserEdit } from 'react-icons/fa'
 import ModalUsers from "./ModalUsers";
+import Constantes from "../utils/Constantes";
 
 const ListUsers = () => {
+  const endPoint = Constantes.URL_SERVICIO + "/usuarios/listar";
   const token = localStorage.getItem("token");
   const [data, setData] = useState([]);
   const MySwal = withReactContent(Swal);
@@ -25,7 +27,7 @@ const ListUsers = () => {
 
   const handleUsers = async () => {
     await axios
-      .get("http://89.116.25.43:3500/api/usuarios/listar", {
+      .get(endPoint, {
         headers: { Authorization: `bearer ${token}` },
       })
       .then((resp) => {

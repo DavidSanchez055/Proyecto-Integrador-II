@@ -26,7 +26,7 @@ export const FormLogin = () => {
     }
     
     //Consumo de servicio Login
-    await axios.post('http://89.116.25.43:3500/api/login', data)
+    await axios.post(endPoint, data)
     .then(response => {
       console.log(response);
     localStorage.setItem('token', response.data.jwt);
