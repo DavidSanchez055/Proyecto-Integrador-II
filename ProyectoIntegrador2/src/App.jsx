@@ -22,6 +22,7 @@ function App() {
       <Route path='/Settings' element={<Settings />}/>
       <Route path='/Regions' element={<Regions />}/>
       <Route path='/Departments' element={<Departments/>}/>
+      <Route path='/Regions' element={<Regions/>}/>
     </Routes>
   )
 }
