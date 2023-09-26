@@ -10,15 +10,13 @@ export const DashboardNav = () => {
     <header>
         <img className="logo" src={Logo}/>
         <nav className="navigation">
-            <NavLink to="/Dashboard"  activeClassName="active">Home</NavLink>
-            <NavLink to="/Products" activeClassName="active">Products</NavLink>
-            <NavLink to="/Departments" activeClassName="active">Departments</NavLink>
-            <NavLink to="/Regions" activeClassName="active">Regions</NavLink>
-            <NavLink to="/Profiles" activeClassName="active">Profile</NavLink>
-           <button className="btnLgn-popup" >Login</button>
-           
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Departments</a>
+            <a href="#">Regions</a>
+            <a href="#">Profile</a>
         </nav>
     </header>
     </>
-  )
+  ) 
 }
