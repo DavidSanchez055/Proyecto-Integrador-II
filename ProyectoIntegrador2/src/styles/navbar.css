@@ -10,6 +10,7 @@ header{
     align-items: center;
     z-index: 99;
     border-bottom: 3px solid #585bf1;
+
 }
 .navigation a {
     position: relative;

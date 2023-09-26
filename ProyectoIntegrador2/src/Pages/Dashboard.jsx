@@ -12,12 +12,11 @@ export const Dashboard = () => {
 
   return (
     <>
-      <DashboardNav />
+      <DashboardNav/>
+
       <div className='flex'>
         
         <div className='w-screen-h-screen'>
-
-
           <Carrusel />
           <div className='flex_cards'>
             <Cards1 />
