@@ -10,11 +10,11 @@ export const DashboardNav = () => {
     <header>
         <img className="logo" src={Logo}/>
         <nav className="navigation">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Departments</a>
-            <a href="#">Regions</a>
-            <a href="#">Profile</a>
+            <NavLink to= "/Dashboard">Home</NavLink>
+            <NavLink to="/Products">Products</NavLink>
+            <NavLink to="/Departments">Departments</NavLink>
+            <NavLink to="Regions">Regions</NavLink>
+            <NavLink to="/Profiles">Profile</NavLink>
         </nav>
     </header>
     </>
