@@ -6,10 +6,12 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Swal from "sweetalert2";
-
+import Constantes from '../utils/Constantes'
 
 
 export const SignUpForm = () => {
+
+    const endPoint = Constantes.URL_SERVICIO + '/registrar';
 
     const [nombres, setNombres] = useState('');
     const [apellidos, setApellidos] = useState('');
@@ -35,7 +37,7 @@ export const SignUpForm = () => {
       }
       
       //Consumo de servicio Login
-      await axios.post("http://89.116.25.43:3500/api/usuarios/registrar", formData)
+      await axios.post(endPoint, formData)
       .then((response) => {
         console.log(response);
         Swal.fire("Registro Exitoso!", "Bienvenido!", "success");

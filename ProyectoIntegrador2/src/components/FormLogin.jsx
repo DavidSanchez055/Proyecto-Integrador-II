@@ -7,9 +7,10 @@ import { SignInButton2 } from './SignInButton2'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-
+import Constantes from '../utils/Constantes'
 export const FormLogin = () => {
-  
+  const endPoint = Constantes.URL_SERVICIO + '/login';
+
   const[usuario, setUsuario] = useState('');
   const[password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export const FormLogin = () => {
     }
     
     //Consumo de servicio Login
-    await axios.post('http://89.116.25.43:3500/api/login', data)
+    await axios.post(endPoint, data)
     .then(response => {
       console.log(response);
     localStorage.setItem('token', response.data.jwt);
