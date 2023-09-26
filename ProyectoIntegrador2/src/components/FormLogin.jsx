@@ -7,9 +7,10 @@ import { SignInButton2 } from './SignInButton2'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-
+import Constantes from '../utils/Constantes'
 export const FormLogin = () => {
-  
+  const endPoint = Constantes.URL_SERVICIO + '/login';
+
   const[usuario, setUsuario] = useState('');
   const[password, setPassword] = useState('');
   const navigate = useNavigate();
