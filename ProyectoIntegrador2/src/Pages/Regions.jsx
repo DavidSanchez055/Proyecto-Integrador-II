@@ -18,9 +18,9 @@ export const Regions = () => {
         <div className='w-screen-h-screen'>
           <Carrusel />
           <div className='flex_cards'>
-            <Cards1 />
             <Cards2 />
             <Cards1 />
+            <Cards2 />
 
           </div>
         </div>
