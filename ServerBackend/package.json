@@ -1,7 +1,7 @@
 {
   "name": "proyecto-integrador-ii",
   "version": "1.0.0",
-  "description": "Primer despliegue",
+  "description": "Primer",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js"

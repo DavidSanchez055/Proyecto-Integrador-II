@@ -7,6 +7,12 @@ app.get('/',(req,res) => {
     message: 'Server Funciona',
     })
 });
+//Routes
+const UsuariosRoutes = require('./routes/UserRoutes');
+
+//Setting Routes
+
+
 
 //Exports
 module.exports = app;
