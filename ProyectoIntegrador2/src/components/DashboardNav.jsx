@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from '../assets/logo.png'
 import '../styles/navbar.css'
 import { NavLink } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
 export const DashboardNav = () => {
   return (

@@ -5,13 +5,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
-
+import '../styles/navbar.css'
 export const DashboardHeader = () => {
   const usuarioA = localStorage.getItem('username')
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
+    <Navbar expand="lg" className="bg-body-tertiary" >
+      <Container fluid> 
         <div className="flex items-center justify-between ">
           <Form className="d-flex">
             <Form.Control

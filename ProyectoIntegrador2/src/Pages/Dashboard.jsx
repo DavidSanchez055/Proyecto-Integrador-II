@@ -12,7 +12,10 @@ export const Dashboard = () => {
 
   return (
     <>
-      <DashboardNav />
+    <header>
+    <DashboardNav />
+    </header>
+    <body>
       <div className='menu flex'>
         
         <div className='w-screen-h-screen'>
@@ -25,7 +28,7 @@ export const Dashboard = () => {
           </div>
         </div>
       </div>
-
+      </body>  
     </>
 
   )

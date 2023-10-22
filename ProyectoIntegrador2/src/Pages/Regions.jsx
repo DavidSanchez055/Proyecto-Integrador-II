@@ -12,7 +12,7 @@ export const Regions = () => {
 
   return (
     <>
-      <DashboardNav />
+      <DashboardHeader />
       <div className='menu flex'>
         
         <div className='w-screen-h-screen'>

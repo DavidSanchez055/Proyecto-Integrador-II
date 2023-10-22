@@ -1,6 +1,15 @@
 import React from 'react'
+import ListProducts from '../components/ListProducts'
+import { DashboardHeader } from '../components/DashboardHeader'
+import { DashboardNav } from '../components/DashboardNav'
 export const Products = () => {
   return (
-    <div>Products</div>
+    <>
+    <DashboardNav/>
+    <div className='products_main'>
+      <ListProducts />
+    </div>
+    </>
+
   )
 }
