@@ -6,15 +6,17 @@ import ListUsers from '../components/ListUsers'
 import '../styles/profiles.css'
 export const Profiles = () => {
   return (
-    <>  
+    <>
       <DashboardNav />
-      <div className='flex'>
-        <div className='w-screen-h-screen'>
-        <ListUsers />
+      <div className='products_main'>
+        <div className='flex'>
+          <div className='w-screen-h-screen'>
+            <ListUsers />
+          </div>
         </div>
       </div>
 
     </>
-    
+
   )
 }
