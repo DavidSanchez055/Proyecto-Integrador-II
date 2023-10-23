@@ -21,10 +21,11 @@ module.exports.CreateUser = async (user) =>{
     });
 }
 
-module.exports.FindAllUser = async () =>{
+module.exports.FindAllUser = async (sort) =>{
     return new Promise((resolve, reject) => {
         UserModel
         .find()
+        .sort(sort)
         .then((resp)=>{
             Response.status = 200;
             Response.message = "Registros Encontrados";
@@ -41,10 +42,10 @@ module.exports.FindAllUser = async () =>{
     });
 }
 
-module.exports.findById = async (id) =>{
+module.exports.FindOneUser = async (id) =>{
     return new Promise((resolve, reject) => {
         UserModel
-        .findOne({_id: id})
+        .findById({_id: id})
         .then((resp)=>{
             Response.status = 200;
             Response.message = "Registros Encontrados";
@@ -61,32 +62,13 @@ module.exports.findById = async (id) =>{
     });
 }
 
-
-module.exports.deleteUserData = async (id) =>{
-    UserModel.findOneAndDelete({_id :id})
-    .then((resp)=>{
-        response.status = 200;
-        response.message = "Registro Eliminado";
-        response.result = resp;
-        resolve(response);
-    })
-    .catch((err) =>{
-        console.log("error:", err)
-        response.status = 500;
-        response.message = "Ocurrio un error en el servidor";
-        response.result = err;
-        reject(response);
-    });
-}
-
-module.exports.updateUser = async (id) =>{
+module.exports.FindOneUsername = async (usuario) =>{
     return new Promise((resolve, reject) => {
-        const query = { _id: id };
         UserModel
-        .findOneAndUpdate(query, {nombres: user.nombres, apellidos: user.apellidos, correo: user.correo, password: user.password, username: user.username})
+        .findOne({usuario: usuario})
         .then((resp)=>{
             Response.status = 200;
-            Response.message = "Registro actualizado";
+            Response.message = "Registros Encontrados";
             Response.result = resp;
             resolve(Response);
         })
@@ -97,5 +79,46 @@ module.exports.updateUser = async (id) =>{
             Response.result = err;
             reject(Response);
         })
-    }
-)}         
+    });
+}
+
+module.exports.deleteUser = async (id) =>{
+    return new Promise((resolve, reject) => {
+        UserModel
+        .findByIdAndDelete(id)
+        .then((resp)=>{
+            Response.status = 200;
+            Response.message = "Registro Eliminado correctamente";
+            Response.result = resp;
+            resolve(Response);
+        })
+        .catch((err) =>{
+            console.log("error:", err)
+            Response.status = 500;
+            Response.message = "Ocurrio un error en el servidor";
+            Response.result = err;
+            reject(Response);
+        })
+    });
+}
+
+
+module.exports.updateUser = async (id, user) =>{
+    return new Promise((resolve, reject) => {
+        UserModel
+        .findOneAndUpdate({_id : id}, {nombres: user.nombres, apellidos: user.apellidos})
+        .then((resp)=>{
+            Response.status = 200;
+            Response.message = "Registro Actualizado correctamente";
+            Response.result = resp;
+            resolve(Response);
+        })
+        .catch((err) =>{
+            console.log("error:", err)
+            Response.status = 500;
+            Response.message = "Ocurrio un error en el servidor";
+            Response.result = err;
+            reject(Response);
+        })
+    });
+}
