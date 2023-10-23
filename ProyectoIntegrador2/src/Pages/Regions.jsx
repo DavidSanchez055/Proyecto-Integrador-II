@@ -12,10 +12,11 @@ export const Regions = () => {
 
   return (
     <>
-      <DashboardHeader />
+      <DashboardNav />
       <div className='menu flex'>
         
         <div className='w-screen-h-screen'>
+          <div className='products_main'>
           <Carrusel />
           <div className='flex_cards'>
             <Cards2 />
@@ -23,6 +24,7 @@ export const Regions = () => {
             <Cards2 />
 
           </div>
+        </div>
         </div>
       </div>
 
