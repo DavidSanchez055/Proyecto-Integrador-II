@@ -7,7 +7,7 @@ import { Products } from './Pages/Products';
 import { Profiles } from './Pages/Profiles';
 import { Settings } from './Pages/Settings';
 import { Regions } from './Pages/Regions';
-import { Departments } from './Pages/Departments';
+import { Restaurants } from './Pages/Restaurants';
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
       <Route path='/Profiles' element={<Profiles />}/>
       <Route path='/Settings' element={<Settings />}/>
       <Route path='/Regions' element={<Regions />}/>
-      <Route path='/Departments' element={<Departments/>}/>
+      <Route path='/Restaurants' element={<Restaurants/>}/>
     </Routes>
   )
 }

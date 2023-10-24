@@ -1,13 +1,13 @@
 import React from 'react'
 import { DashboardNav } from '../components/DashboardNav'
-import { ListDepartments } from '../components/ListDepartments'
+import { ListRestaurants } from '../components/ListRestaurants'
 
-export const Departments = () => {
+export const Restaurants = () => {
   return (
     <>
       <DashboardNav/>
       <div className='regions_main'>
-        <ListDepartments/>
+        <ListRestaurants/>
 
       </div>
     </>
