@@ -15,7 +15,6 @@ export const Dashboard = () => {
       <header>
         <DashboardNav />
       </header>
-      <body>
         <div className='products_main'>
           <div className='menu flex'>
             <div className='w-screen-h-screen'>
@@ -24,12 +23,10 @@ export const Dashboard = () => {
                 <Cards1 />
                 <Cards2 />
                 <Cards1 />
-
               </div>
             </div>
           </div>
         </div>
-      </body>
     </>
 
   )

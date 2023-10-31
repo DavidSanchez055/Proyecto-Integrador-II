@@ -18,6 +18,24 @@ export const ListRestaurants = () => {
         <li className='Restaurants_pic1'>
           <img className='pics'   src = {pic2} alt = "Restaurant3"/>
         </li>
+        <li className='Restaurants_pic1'>
+          <img className='pics'   src = {pic1} alt = "Restaurant1"/>
+        </li>
+        <li className='Restaurants_pic1'>
+          <img className='pics'   src = {pic2} alt = "Restaurant2"/>
+        </li>
+        <li className='Restaurants_pic1'>
+          <img className='pics'   src = {pic2} alt = "Restaurant3"/>
+        </li>
+        <li className='Restaurants_pic1'>
+          <img className='pics'   src = {pic1} alt = "Restaurant1"/>
+        </li>
+        <li className='Restaurants_pic1'>
+          <img className='pics'   src = {pic2} alt = "Restaurant2"/>
+        </li>
+        <li className='Restaurants_pic1'>
+          <img className='pics'   src = {pic2} alt = "Restaurant3"/>
+        </li>
       </ul>
     </> 
     
