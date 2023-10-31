@@ -33,7 +33,6 @@ export const DashboardHeader = () => {
             <NavLink to="/Dashboard">Home</NavLink>
             <NavLink to="/Profiles">Profile</NavLink>
             <NavLink to="/Products">Products</NavLink>
-            <NavLink to="/Regions">Regions</NavLink>
           </Nav>
           <Navbar.Brand href="#">{usuarioA}</Navbar.Brand>
         </Navbar.Collapse>
