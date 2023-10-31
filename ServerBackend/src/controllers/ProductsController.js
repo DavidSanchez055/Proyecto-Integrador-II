@@ -1,6 +1,5 @@
-const RegionsModels = require("../models/RegionsModels");
-const UserModel = require("../models/UsuariosModels");
-const {CreateUser, FindAllUser, FindOneUser, FindOneUsername, deleteUser, updateUser} = require("../repository/UserRepository");
+const ProductModel = require("../models/ProductsModels");
+const {CreateUser, FindAllUser, FindOneUser, FindOneUsername, deleteUser, updateUser} = require("../repository/ProductsRepository");
 const bcrypt = require("bcrypt-nodejs");
 
 async function create(req, res){
@@ -58,7 +57,7 @@ async function updateUserData(req, res){
     const id = req.params["id"];
     const body = req.body;
 
-    let user = new UserModel();
+    let user = new ProductModel();
     user.nombres = body.nombres;
     user.apellidos = body.apellidos;
 

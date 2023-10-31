@@ -1,13 +1,13 @@
 const {Response} = require("../utils/Response"); 
-const UserModel = require("../models/RegionsModels");
+const ProductModel = require("../models/ProductsModel");
 
-module.exports.CreateUser = async (user) =>{
+module.exports.CreateProduct = async (user) =>{
     return new Promise((resolve, reject) => {
         user
         .save()
         .then((resp)=>{
             Response.status = 201;
-            Response.message = "Se ha creado el Usuario Correctamente";
+            Response.message = "Se ha creado el Producto Correctamente";
             Response.result = resp;
             resolve(Response);
         })
@@ -21,7 +21,7 @@ module.exports.CreateUser = async (user) =>{
     });
 }
 
-module.exports.FindAllUser = async (sort) =>{
+module.exports.FindAllProduct = async (sort) =>{
     return new Promise((resolve, reject) => {
         UserModel
         .find()
@@ -42,7 +42,7 @@ module.exports.FindAllUser = async (sort) =>{
     });
 }
 
-module.exports.FindOneUser = async (id) =>{
+module.exports.FindOneProduct = async (id) =>{
     return new Promise((resolve, reject) => {
         UserModel
         .findById({_id: id})
@@ -62,10 +62,10 @@ module.exports.FindOneUser = async (id) =>{
     });
 }
 
-module.exports.FindOneUsername = async (usuario) =>{
+module.exports.FindOneProductId = async (nombre) =>{
     return new Promise((resolve, reject) => {
         UserModel
-        .findOne({usuario: usuario})
+        .findOne({usuario: nombre})
         .then((resp)=>{
             Response.status = 200;
             Response.message = "Registros Encontrados";
@@ -82,7 +82,7 @@ module.exports.FindOneUsername = async (usuario) =>{
     });
 }
 
-module.exports.deleteUser = async (id) =>{
+module.exports.deleteProduct = async (id) =>{
     return new Promise((resolve, reject) => {
         UserModel
         .findByIdAndDelete(id)
@@ -103,7 +103,7 @@ module.exports.deleteUser = async (id) =>{
 }
 
 
-module.exports.updateUser = async (id, user) =>{
+module.exports.updateProduct = async (id, user) =>{
     return new Promise((resolve, reject) => {
         UserModel
         .findOneAndUpdate({_id : id}, {nombres: user.nombres, apellidos: user.apellidos})
