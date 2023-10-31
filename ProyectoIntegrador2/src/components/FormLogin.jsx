@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
-import loro from '../assets/macau-loro.jpg'
+import Card1 from '../assets/card1.jpg'
 import '../styles/Login.css'
 import { LoginButton }   from '../components/loginButton.jsx'
 import { SignInButton2 } from './SignInButton2'
@@ -79,7 +79,7 @@ export const FormLogin = () => {
 
       </div>
       <div className="photo">
-        <img src={loro} />
+        <img src={Card1} />
       </div>
     </div>
   )
