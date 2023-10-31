@@ -12,23 +12,21 @@ export const Dashboard = () => {
 
   return (
     <>
-    <header>
-    <DashboardNav />
-    </header>
-    <body>
-      <div className='menu flex'>
-        
-        <div className='w-screen-h-screen'>
-          <Carrusel />
-          <div className='flex_cards'>
-            <Cards1 />
-            <Cards2 />
-            <Cards1 />
-
+      <header>
+        <DashboardNav />
+      </header>
+        <div className='products_main'>
+          <div className='menu flex'>
+            <div className='w-screen-h-screen'>
+              <Carrusel />
+              <div className='flex_cards'>
+                <Cards1 />
+                <Cards2 />
+                <Cards1 />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </body>  
     </>
 
   )

@@ -1,0 +1,18 @@
+.titleDep{
+    font-size: large;
+    color: green;
+}
+.Restaurants_pic{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+        gap(20px)
+    )
+
+}
+
+.pics{
+    width: 250px;
+    height: 300px;
+}

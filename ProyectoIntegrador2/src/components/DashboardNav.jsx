@@ -11,7 +11,7 @@ export const DashboardNav = () => {
         <nav className="navigation">
             <NavLink to= "/Dashboard">Home</NavLink>
             <NavLink to="/Products">Products</NavLink>
-            <NavLink to="/Departments">Departments</NavLink>
+            <NavLink to="/Restaurants">Restaurants</NavLink>
             <NavLink to="/Regions">Regions</NavLink>
             <NavLink to="/Profiles">Profile</NavLink>
         </nav>
