@@ -3,7 +3,7 @@ import Valle from '../assets/valleCocora.jpg';
 import Baile from '../assets/adultos-jovenes-disfrutan-festival-tradicional-bailando-al-aire-libre-generado-ia.jpg';
 import Calles from '../assets/arquitectura-aire-libre-mezclan-ciudad-mediterranea-historica-ia-generativa.jpg';
 import { useState } from 'react';
-
+import '../styles/carousel.css';
 function Carrusel() {
   const [index, setIndex] = useState(0);
 
@@ -14,25 +14,25 @@ function Carrusel() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img src={Baile}/>
+        <img className="SlidesPics" src={Baile}/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='slideName'>Conoce nuestra Cultura</h3>
+          <p className='slideText'>Nuestra gente te recibe con brazos abiertos</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={Valle}/>
+        <img className="SlidesPics" src={Valle}/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className='slideName'>Conoce nuestros paisajes</h3>
+          <p className='slideText'>Un ambiente rico en biodiversidad y naturaleza</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img src={Calles}/>
+      <img className="SlidesPics" src={Calles}/>
         <Carousel.Caption>
-          <h3>Third slide </h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h3 className='slideName'>Conoce nuestras ciudades</h3>
+          <p className='slideText'>
+            Sus calles llenas de vida y su arquitectura te sorprenderán
           </p>
         </Carousel.Caption>
       </Carousel.Item>
