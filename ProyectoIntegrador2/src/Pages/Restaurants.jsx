@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Card, CardContent, CardMedia, Typography, Paper } from '@mui/material';
+import { Grid, Card, CardContent, CardMedia, Typography} from '@mui/material';
 import Restaurant1 from '../assets/Restaurant1.png'; 
 import Restaurant2 from '../assets/Restaurant2.jpg'; 
 import Restaurant3 from '../assets/Restaurant3.jpg';
@@ -84,12 +84,10 @@ const customStyles = {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      marginTop: "2rem",
       maxWidth: "800px",
       margin: "0 auto",
   },
   h1: {
-      fontFamily: "Rugen de Variatype", 
       fontSize: "42px", 
       marginBottom: "0.5rem",
       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)", 
@@ -153,7 +151,7 @@ export const Restaurants = () => {
                                             {service.name}
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            Info: {service.description}
+                                            {service.description}
                                         </Typography>
                                     </CardContent>
                                 </Card>

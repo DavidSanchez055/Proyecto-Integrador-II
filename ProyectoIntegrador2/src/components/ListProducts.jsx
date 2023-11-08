@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios'
 import Swal from "sweetalert2";
 import "../styles/listproducts.css";
+
 const ListProducts = () => {
   const token = localStorage.getItem("token");
   const [data, setData] = useState([]);
