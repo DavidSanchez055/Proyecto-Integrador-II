@@ -4,11 +4,13 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: linear-gradient(to right, rgb(236, 62, 62), rgba rgb(223, 89, 11));
+    background: #006700; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    height: 10vh;
+
 }
 
 .navigation a {
@@ -17,7 +19,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-    color: black;
+    color: white;
 }
 .navigation a::after{
     content: '';
@@ -57,6 +59,15 @@ header{
 }
 
 .logo {
-    width: 20%;
-    height: 80%;
+    width: 10rem;
+    height: 4rem;
 }
+
+
+/*.color1 { #408f3d };
+.color2 { #5bc22f };
+.color3 { #44af20 };
+.color4 { #2d9d10 };
+.color5 { #006700 };*/
+
+/*#46d641*/
