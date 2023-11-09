@@ -14,7 +14,7 @@
     position: relative;
     height: 90vh;
     width: 70vw;
-    background: rgb(255,255,255);
+    background: rgba(60, 59, 58, 0.655);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     width: 45%;
     height: 100%;
     padding: 20px 20px 20px 55px;
-    background: rgb(255,255,255);
+    background: rgb(255, 252, 252)5;
     display:flex;
     flex-direction: column;
     justify-content:space-between;
@@ -34,46 +34,50 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .card_form h4{
     font-size: 24px;
-    color:rgb(45, 100, 30);
+    color:rgb(255, 255, 255);
+    
 }
-.card_form img{
+.card_form h5{
     width: 90%;
-    height: 20%;
+    color:rgb(255, 255, 255);
 }
 
 .input_user{
     margin: 1%;
     margin-left: 5%;
+    color: azure;
 }
 .input_password{
     margin: 1%;
     margin-left: 5%;
+    
 }
 
 .inputs {
-    width: 110%;
+    width: 100%;
     height: 40px;
     margin: 10px 10% 10px 0;
     position: relative;
-    border-color: rgb(2, 150, 100);
+    border-color: rgb(255, 255, 255)4;
     border-radius: 10px;
     padding-inline: 15px;
-    background: rgba(168, 161, 161, 0.418);
+    background: rgba(0, 0, 0, 0.753);
     
 }
 .inputs input{
-    border-color: rgba(2, 150, 100, 1);
+    border-color: rgb(255, 254, 254);
 }
 
 .labels{
     margin-top: 10px;
     margin-bottom: 10px;
-    color:rgb(45, 100, 30);
+    color: rgb(255, 255, 255);
 }
 .photo{
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(120deg, rgb(254, 254, 254) 0%rgb(250, 250, 250)fa 100%);
     background-size: cover;
     width: 55%;
     height: 100%;
@@ -85,33 +89,38 @@
 }
 
 .photo img{
-    height: 80%;
-    width: 70%;
-    border-radius: 20px;
+    height: 90%;
+    width: 100%;
+    color: black;
 }
 
 .option{
-    color:rgb(45, 100, 30);
+    color:rgb(0, 0, 0);
     margin: -5px 0 10px;
     display: flex;
     justify-content: space-between;
 }
 .option label{
+    color:white;
     margin-right: 50px;
     margin-left: 10px;
 }
 .option a{
+    color: aliceblue;
     margin-right: 10px;
     text-decoration: none;
 }
 .option a:hover{
     text-decoration: underline;
+    color: blue;
 }
 .lgnBtn {
     display: flex;
     justify-content: space-between;
 }
 .lgnBtn button{
+    color: white;
+    border-color: white;
     width: 150px;
     height: 40px;
     border-radius: 10px;
