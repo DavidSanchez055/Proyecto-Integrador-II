@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
-import Card1 from '../assets/card1.jpg'
+import Card1 from '../assets/card1.png'
 import '../styles/Login.css'
 import { LoginButton }   from '../components/loginButton.jsx'
 import { SignInButton2 } from './SignInButton2'
@@ -50,7 +50,7 @@ export const FormLogin = () => {
       <div className="card_form">
         <img src={Logo}/>
         <h4>Artificial Intelligence giving you travel recommendations</h4>
-        <a>Welcome back! Please login to your account.</a>
+        <h5>Welcome back! Please login to your account.</h5>
         <div className="input_user">
           <label className="labels">Username</label>
           <input className="inputs" type="text" placeholder="Username" 

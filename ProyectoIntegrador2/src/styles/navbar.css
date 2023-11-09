@@ -4,14 +4,13 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: linear-gradient(to right, rgba(242, 252, 253, 1), rgba(202, 255, 252, 1));
+    background: linear-gradient(to right, rgb(236, 62, 62), rgba rgb(223, 89, 11));
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    
-
 }
+
 .navigation a {
     position: relative;
     font-size: 1.1em;

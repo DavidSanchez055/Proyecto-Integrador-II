@@ -1,5 +1,5 @@
 import React from 'react'
-import Tucan from '../assets/toucan.jpg'
+import Tucan from '../assets/toucan.png'
 import '../styles/signup.css'
 import { SignInButton } from './SignInButton'
 import { useState } from 'react'
